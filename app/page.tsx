@@ -21,7 +21,7 @@ export default async function Home() {
           <header className="section-header mb-4">
             <h2 className="section-title text-xl font-semibold">Questions</h2>
           </header>
-          {questions?.data.length ? (
+          {questions?.data?.length ? (
             <ul className="grid gap-4">
               {questions.data.map((question) => (
                 <li key={question?.documentId}>
