@@ -1,3 +1,5 @@
+// ./components/Answer/Form.tsx
+
 "use client";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
@@ -17,9 +19,6 @@ const AnswerForm: React.FC<{ id?: string }> = ({ id }) => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("🚀 ~ handleSubmit ~ id", id);
-    console.log("🚀 ~ handleSubmit ~ value", value);
-    console.log("🚀 ~ handleSubmit ~ name", name);
 
     if (!id) return toast.error("Invalid question ID");
     if (!value.trim() || !name.trim())

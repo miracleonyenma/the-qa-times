@@ -1,3 +1,5 @@
+// ./components/Comment/Card.tsx
+
 "use client";
 
 import { Comment } from "@/types";

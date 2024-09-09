@@ -1,3 +1,5 @@
+// ./components/Answer/Card.tsx
+
 "use client";
 
 import { Answer, Comment } from "@/types";
@@ -32,7 +34,10 @@ const AnswerCard: React.FC<{
         if (data?.error) {
           return data.error.message;
         }
-        setComments(data.data);
+        if (!data?.data?.length) {
+          return "No comments yet. Be the first!";
+        }
+        setComments(data?.data);
         setLoading(false);
         return "Comments fetched successfully";
       },

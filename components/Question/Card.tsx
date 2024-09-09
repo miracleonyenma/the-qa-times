@@ -1,3 +1,5 @@
+// ./components/Question/Card.tsx
+
 import { Button } from "@/components/ui/button";
 import { Question } from "@/types";
 import Link from "next/link";

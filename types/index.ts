@@ -50,18 +50,18 @@ type Meta = {
 };
 
 type AnswersResponse = {
-  data: Answer[];
-  meta: Meta;
+  data?: Answer[];
+  meta?: Meta;
 };
 
 type QuestionsResponse = {
-  data: Question[];
-  meta: Meta;
+  data?: Question[];
+  meta?: Meta;
 };
 
 type CommentsResponse = {
-  data: Comment[];
-  meta: Meta;
+  data?: Comment[];
+  meta?: Meta;
 };
 
 type QuestionResponse = {

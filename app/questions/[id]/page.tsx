@@ -1,3 +1,5 @@
+// ./questions/[id]/page.tsx
+
 import AnswerCard from "@/components/Answer/Card";
 import AnswerForm from "@/components/Answer/Form";
 import { getAnswers, getQuestion } from "@/utils";
@@ -10,7 +12,9 @@ const QuestionPage = async ({
     id: string;
   };
 }) => {
+  // get the question id from the path
   const id = params.id;
+  // fetch the question and answers
   const question = await getQuestion(id as string);
   const answers = await getAnswers(id as string);
   return (
